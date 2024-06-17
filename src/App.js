@@ -5,6 +5,7 @@ import { useState} from 'react'
 
 function App123456789(a) {
   //sua code tai day
+  // se bi conflict code tai day
   const [job, setJob] = useState('')
   const [jobs, setJobs] = useState(() => {
     const storeLocal = JSON.parse(localStorage.getItem('jobs'))
