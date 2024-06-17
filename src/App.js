@@ -3,7 +3,7 @@ import './App.css';
 import { useState} from 'react'
 
 
-function App(a) {
+function App123456789(a) {
   //sua code tai day
   const [job, setJob] = useState('')
   const [jobs, setJobs] = useState(() => {
