@@ -11,16 +11,19 @@ function App123456789(a) {
 
   // day la new line vua day
   const [job, setJob] = useState('')
+  //ha sua 1
   const [jobs, setJobs] = useState(() => {
     const storeLocal = JSON.parse(localStorage.getItem('jobs'))
     return storeLocal ?? []
   })
+  //ha sua 2
   const handleClick = () => {
     setJobs(prev => {
       const newList = [...prev, job]
       localStorage.setItem('jobs', JSON.stringify(newList))
       return newList
     })
+    //ha sua 3
     setJob('')
     console.log('jobs', jobs);
   }
@@ -28,6 +31,7 @@ function App123456789(a) {
     localStorage.clear()
     setJobs([])
   }
+  //ha sua 4
   return (
     <div className="App">
       <input type="text" value={job} onChange={e => setJob(e.target.value)} />
