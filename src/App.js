@@ -10,6 +10,7 @@ function App123456789(a) {
   // se bi conflict code tai day
 
   // day la new line vua day
+  // se bi conflict code tai daydfdsfds dsfdsfdsfdsfds
   const [job, setJob] = useState('')
   const [jobs, setJobs] = useState(() => {
     const storeLocal = JSON.parse(localStorage.getItem('jobs'))

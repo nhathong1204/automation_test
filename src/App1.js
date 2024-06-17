@@ -8,6 +8,7 @@ function App() {
   const [counter, setCounter] = useState(() => {
     const total = orders.reduce((prev, cur) => prev + cur)
       console.log(total)
+      //fgetrt
       return total
   })
   const handleClick = () => {

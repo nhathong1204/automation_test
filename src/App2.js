@@ -10,6 +10,7 @@ const gifts = [
 
 function App() {
   const [gift, setGift] = useState()
+  //aaaaaa
   const handleClick = () => {
     setGift(() => {
       const index = Math.floor(Math.random() * gifts.length)
