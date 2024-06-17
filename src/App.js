@@ -16,21 +16,14 @@ function App123456789(a) {
     const storeLocal = JSON.parse(localStorage.getItem('jobs'))
     return storeLocal ?? []
   })
-  //ha sua 2
-  const handleClick = () => {
-    setJobs(prev => {
-      const newList = [...prev, job]
-      localStorage.setItem('jobs', JSON.stringify(newList))
-      return newList
-    })
-    //ha sua 3
-    setJob('')
-    console.log('jobs', jobs);
-  }
+  //nhat sua 1
+  setJob('')
+  console.log('jobs', jobs);
   const handleDeleteClick = () => {
     localStorage.clear()
     setJobs([])
   }
+
   //ha sua 4
   return (
     <div className="App">
@@ -45,5 +38,8 @@ function App123456789(a) {
     </div>
   );
 }
+  //nhat sua 2
+  
+//nhat sua 3
 
 export default App;
