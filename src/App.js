@@ -8,6 +8,8 @@ function App123456789(a) {
   //aaaaa
   //bbbb
   // se bi conflict code tai day
+
+  // day la new line vua day
   const [job, setJob] = useState('')
   const [jobs, setJobs] = useState(() => {
     const storeLocal = JSON.parse(localStorage.getItem('jobs'))
