@@ -3,7 +3,7 @@ import './App.css';
 import { useState} from 'react'
 
 
-function App() {
+function App(a) {
   const [job, setJob] = useState('')
   const [jobs, setJobs] = useState(() => {
     const storeLocal = JSON.parse(localStorage.getItem('jobs'))
